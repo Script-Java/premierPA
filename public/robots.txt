@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://premierpa.claims
+
+# Sitemaps
+Sitemap: https://premierpa.claims/sitemap.xml
