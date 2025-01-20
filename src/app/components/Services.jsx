@@ -8,6 +8,7 @@ import s5 from "../assets/services/5.jpg";
 import s6 from "../assets/services/6.jpg";
 import s7 from "../assets/services/7.jpg";
 import s8 from "../assets/services/8.jpg";
+import s9 from "../assets/services/9.jpg";
 
 function Services() {
   return (
@@ -21,26 +22,14 @@ function Services() {
         </div>
         <div className="flex justify-center">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <div className="card card-compact bg-base-200 w-80 lg:w-96 shadow-xl">
+          <div className="card card-compact bg-base-200 w-80 lg:w-96 shadow-xl">
               <figure>
-                <Image src={s1} alt="water damage"></Image>
+                <Image src={s9} alt="water damage"></Image>
               </figure>
               <div className="card-body">
-                <h2 className="card-title text-primary">Water Damage</h2>
+                <h2 className="card-title text-primary">Hail and Wind Damage</h2>
                 <p className="text-primary">
-                  Leaks can cause major damage, but we help you get coverage.
-                </p>
-              </div>
-            </div>
-
-            <div className="card card-compact bg-base-200 w-80 lg:w-96 shadow-xl">
-              <figure>
-                <Image src={s2} alt="mold damage"></Image>
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title text-primary">Mold Damage</h2>
-                <p className="text-primary">
-                  Moisture leads to mold; we ensure it’s addressed and covered.
+                  Hail and wind damage impacts roofs, siding, and property surfaces.
                 </p>
               </div>
             </div>
@@ -57,6 +46,19 @@ function Services() {
             </div>
             <div className="card card-compact bg-base-200 w-80 lg:w-96 shadow-xl">
               <figure>
+                <Image src={s1} alt="water damage"></Image>
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-primary">Water Damage</h2>
+                <p className="text-primary">
+                  Leaks can cause major damage, but we help you get coverage.
+                </p>
+              </div>
+            </div>
+
+
+            <div className="card card-compact bg-base-200 w-80 lg:w-96 shadow-xl">
+              <figure>
                 <Image src={s4} alt="fire damage"></Image>
               </figure>
               <div className="card-body">
@@ -66,17 +68,19 @@ function Services() {
                 </p>
               </div>
             </div>
+
             <div className="card card-compact bg-base-200 w-80 lg:w-96 shadow-xl">
               <figure>
-                <Image src={s5} alt="sinkhole damage"></Image>
+                <Image src={s7} alt="vandalsim damage"></Image>
               </figure>
               <div className="card-body">
-                <h2 className="card-title text-primary">Sinkhole Damage</h2>
+                <h2 className="card-title text-primary">Vandalism Damage</h2>
                 <p className="text-primary">
-                  Sinkholes often go unnoticed; we ensure you're protected.
+                  Vandalism damage? We maximize your settlement.
                 </p>
               </div>
             </div>
+
             <div className="card card-compact bg-base-200 w-80 lg:w-96 shadow-xl">
               <figure>
                 <Image src={s6} alt="storm damage"></Image>
@@ -90,17 +94,7 @@ function Services() {
                 </p>
               </div>
             </div>
-            <div className="card card-compact bg-base-200 w-80 lg:w-96 shadow-xl">
-              <figure>
-                <Image src={s7} alt="vandalsim damage"></Image>
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title text-primary">Vandalism Damage</h2>
-                <p className="text-primary">
-                  Vandalism damage? We maximize your settlement.
-                </p>
-              </div>
-            </div>
+            
             <div className="card card-compact bg-base-200 w-80 lg:w-96">
               <figure>
                 <Image src={s8} alt="underpaid"></Image>
