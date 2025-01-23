@@ -12,6 +12,7 @@ function Contact() {
       name: formData.get("name"),
       email: formData.get("email"),
       message: formData.get("message"),
+      phone: formData.get("phone"),
     };
 
     try {
@@ -56,6 +57,13 @@ function Contact() {
               type="email"
               name="email"
               placeholder="Email"
+              className="input input-bordered w-full"
+              required
+            />
+            <input
+              type="text"
+              name="phone"
+              placeholder="phone #"
               className="input input-bordered w-full"
               required
             />

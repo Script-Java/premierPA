@@ -2,9 +2,9 @@ import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { name, email, message } = req.body;
+    const { name, email, message, phone } = req.body;
 
-    if (!name || !email || !message) {
+    if (!name || !email || !message || !phone) {
       return res.status(400).json({ error: "All fields are required." });
     }
 
@@ -23,7 +23,7 @@ export default async function handler(req, res) {
         from: process.env.EMAIL,
         to: process.env.EMAIL,
         subject: `New Contact Form Submission from ${name}`,
-        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}\nPhone: ${phone}`,
       };
 
       // Send the email
